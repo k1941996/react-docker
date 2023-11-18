@@ -1,0 +1,9 @@
+version: '1'
+services:
+  react-app:
+    container_name: reaect_app
+    build: 
+      context: .
+      dockerfile: DockerFile.prod
+    ports:
+     - 8080:5173
