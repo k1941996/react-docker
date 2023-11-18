@@ -4,6 +4,8 @@ services:
     container_name: reaect_app
     build: 
       context: .
-      dockerfile: DockerFile.prod
+      dockerfile: Dockerfile
+    expose:
+      - 8080
     ports:
-     - 8080:5173
+      - 8080:80
